@@ -166,7 +166,7 @@ def final_message(message: Message):
         'ideologies': ideology
                 }
     save(users)
-    bot.send_message(chat_id=message.chat.id, text=ideology, reply_markup=markup_4)
+    bot.send_message(chat_id=message.chat.id, text=text['discruption'][ideology], reply_markup=markup_4)
 
 
 @bot.message_handler(content_types=['text'])
